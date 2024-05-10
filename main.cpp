@@ -21,10 +21,10 @@ class TapeInterface{
     virtual void externalSort(){}
     virtual void incrmtSecondaryArrayIndx(){}
     virtual void setClusterSize(int cluster){}
-    void setSleepForShiftBtwTapes(int sleep){}
-    void setSleepForWrite(int sleep){}
-    void setSleepForRead(int sleep){}
-    void setSleepForShiftInTape(int sleep){}
+    virtual void setSleepForShiftBtwTapes(int sleep){}
+    virtual void setSleepForWrite(int sleep){}
+    virtual void setSleepForRead(int sleep){}
+    virtual void setSleepForShiftInTape(int sleep){}
     static int clusterSize;
     protected:
     FILE* mainFile;
